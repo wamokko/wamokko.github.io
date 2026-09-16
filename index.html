@@ -1,66 +1,143 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regras do Servidor | Garry's Mod</title>
+  <title>Regras do Servidor | PonyBuild Brasil</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0f0a1c;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(147, 51, 234, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(236, 72, 153, 0.15) 0px, transparent 50%);
+      background-attachment: fixed;
+    }
+    .font-pony {
+      font-family: 'Fredoka', cursive;
+    }
+  </style>
 </head>
-<body class="bg-zinc-900 text-zinc-200 antialiased font-sans">
+<body class="text-purple-100 antialiased min-h-screen">
 
-  <div class="max-w-4xl mx-auto px-4 py-10">
-    <!-- Header -->
-    <header class="text-center mb-10 border-b border-zinc-800 pb-8">
-      <h1 class="text-4xl font-extrabold tracking-tight text-white mb-2">Regras do Servidor</h1>
-      <p class="text-zinc-400 text-sm">Mantenha a boa convivência e aproveite o servidor.</p>
-    </header>
+  <!-- Header / Banner Header -->
+  <header class="relative border-b border-purple-900/50 bg-purple-950/40 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3 text-center md:text-left">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 flex items-center justify-center text-white font-pony text-2xl shadow-lg shadow-purple-500/30">
+          ✨
+        </div>
+        <div>
+          <h1 class="text-2xl font-bold font-pony tracking-wide bg-gradient-to-r from-pink-300 via-purple-200 to-indigo-300 bg-clip-text text-transparent">
+            PonyBuild Brasil
+          </h1>
+          <p class="text-xs font-semibold uppercase tracking-widest text-pink-400/80">Diretrizes do Servidor</p>
+        </div>
+      </div>
 
-    <!-- Menu de Regras -->
-    <main class="space-y-6">
+      <!-- Quick Nav Link -->
+      <a href="#observacao" class="text-xs font-semibold bg-purple-900/60 hover:bg-purple-800 border border-purple-700/50 text-pink-300 px-4 py-2 rounded-full transition duration-300 hover:shadow-md hover:shadow-pink-500/20">
+        📌 Observações Finais
+      </a>
+    </div>
+  </header>
+
+  <div class="max-w-5xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+    <!-- Navegação de Regras (Menu Lateral para Telas Grandes) -->
+    <aside class="md:col-span-1 space-y-2 hidden md:block sticky top-24 h-fit">
+      <p class="text-xs font-bold uppercase tracking-wider text-purple-400 px-3 mb-3">Índice</p>
+      <nav class="flex flex-col space-y-1 text-sm">
+        <a href="#r1" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🤝</span> 1. Respeito</a>
+        <a href="#r2" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🧱</span> 2. Construções</a>
+        <a href="#r3" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🔞</span> 3. Conteúdo NSFW</a>
+        <a href="#r4" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🔒</span> 4. Safe Spaces</a>
+        <a href="#r5" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🛡️</span> 5. Administração</a>
+        <a href="#r6" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🎈</span> 6. Diversos</a>
+      </nav>
+    </aside>
+
+    <!-- Lista Principal de Regras -->
+    <main class="md:col-span-3 space-y-6">
+
+      <!-- Apresentação -->
+      <div class="bg-gradient-to-r from-purple-900/30 to-pink-900/20 border border-purple-800/40 rounded-2xl p-6 backdrop-blur-sm">
+        <h2 class="text-xl font-pony text-pink-300 mb-1 flex items-center gap-2">
+          Bem-vindo ao PonyBuild! 🦄
+        </h2>
+        <p class="text-sm text-purple-200/80 leading-relaxed">
+          Para garantir a amizade e a diversão de todos no servidor, solicitamos que leia e siga as regras abaixo.
+        </p>
+      </div>
 
       <!-- Regra 1 -->
-      <section class="bg-zinc-800/50 border border-zinc-700/50 rounded-xl p-6 shadow-md">
-        <h2 class="text-xl font-bold text-amber-400 mb-3 flex items-center gap-2">
-          <span>1.</span> Respeito e Conduta
-        </h2>
-        <ul class="list-disc list-inside space-y-1 text-zinc-300">
+      <section id="r1" class="group bg-purple-950/30 border border-purple-800/30 hover:border-purple-600/50 rounded-2xl p-6 transition duration-300 hover:shadow-lg hover:shadow-purple-900/20">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-10 h-10 rounded-xl bg-purple-900/50 border border-purple-700/50 flex items-center justify-center text-pink-400 font-pony text-lg">1</span>
+          <h2 class="text-xl font-pony text-purple-100 group-hover:text-pink-300 transition">Respeito e Conduta</h2>
+        </div>
+        <ul class="space-y-2 text-sm text-purple-200/90 list-disc list-inside">
           <li>Trate todos os jogadores com respeito básico.</li>
           <li>Assédio, discriminação e toxicidade excessiva não serão tolerados.</li>
-          <li>Brincadeiras leves são permitidas, desde que não ultrapassem o limite do constrangedor.</li>
+          <li>Brincadeiras e zoações leves são permitidas, desde que não ultrapassem o limite do constrangedor.</li>
         </ul>
       </section>
 
       <!-- Regra 2 -->
-      <section class="bg-zinc-800/50 border border-zinc-700/50 rounded-xl p-6 shadow-md">
-        <h2 class="text-xl font-bold text-amber-400 mb-3 flex items-center gap-2">
-          <span>2.</span> Construções e Props
-        </h2>
-        <ul class="list-disc list-inside space-y-1 text-zinc-300">
+      <section id="r2" class="group bg-purple-950/30 border border-purple-800/30 hover:border-purple-600/50 rounded-2xl p-6 transition duration-300 hover:shadow-lg hover:shadow-purple-900/20">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-10 h-10 rounded-xl bg-purple-900/50 border border-purple-700/50 flex items-center justify-center text-pink-400 font-pony text-lg">2</span>
+          <h2 class="text-xl font-pony text-purple-100 group-hover:text-pink-300 transition">Construções e Props</h2>
+        </div>
+        <ul class="space-y-2 text-sm text-purple-200/90 list-disc list-inside">
           <li>Não destrua ou atrapalhe construções de outros jogadores sem permissão.</li>
           <li>Evite spam excessivo de props que cause lag significativo no servidor.</li>
-          <li>O uso de Prop Protection deve ser respeitado.</li>
+          <li>O uso de <strong>Prop Protection</strong> deve ser respeitado por todos.</li>
         </ul>
       </section>
 
-      <!-- Regra 3 -->
-      <section class="bg-zinc-800/50 border border-zinc-700/50 rounded-xl p-6 shadow-md">
-        <h2 class="text-xl font-bold text-amber-400 mb-3 flex items-center gap-2">
-          <span>3.</span> NSFW e Conteúdo Adulto
-        </h2>
-        <ul class="list-disc list-inside space-y-1 text-zinc-300">
-          <li>Conteúdo adulto (ERP, modelos NSFW, interações sexuais e afins) não é incentivado neste servidor.</li>
-          <li>Caso ocorra, é estritamente restrito a <strong>Safe Spaces</strong>. No mapa principal e áreas públicas, deve permanecer <strong>SFW</strong>.</li>
-          <li>O dono do Safe Space é o único responsável por quem entra e pelo que acontece dentro dele.</li>
-          <li>Consentimento é obrigatório. Qualquer tentativa de forçar interações NSFW resultará em punição imediata.</li>
-        </ul>
+      <!-- Regra 3 (NSWF - Com Destaque Especial) -->
+      <section id="r3" class="relative bg-gradient-to-b from-purple-950/50 to-pink-950/30 border-2 border-pink-500/40 rounded-2xl p-6 shadow-lg shadow-pink-950/30 overflow-hidden">
+        <div class="absolute top-0 right-0 bg-pink-500/20 text-pink-300 border-l border-b border-pink-500/30 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-bl-lg">
+          Atenção Redobrada
+        </div>
+        
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-10 h-10 rounded-xl bg-pink-900/50 border border-pink-600/50 flex items-center justify-center text-pink-300 font-pony text-lg">3</span>
+          <h2 class="text-xl font-pony text-pink-200">NSFW e Conteúdo Adulto</h2>
+        </div>
+
+        <div class="space-y-3 text-sm text-purple-200/90">
+          <!-- Destaque para "não é incentivado" -->
+          <div class="bg-pink-950/60 border border-pink-500/30 rounded-xl p-3.5 flex items-start gap-3">
+            <span class="text-lg">⚠️</span>
+            <p class="leading-relaxed">
+              Conteúdo adulto (ERP, modelos NSFW, interações sexuais e afins) 
+              <span class="inline-block px-2 py-0.5 mx-1 font-bold text-pink-100 bg-pink-600/60 border border-pink-400/80 rounded-md shadow-sm">
+                NÃO É INCENTIVADO
+              </span> 
+              neste servidor.
+            </p>
+          </div>
+
+          <ul class="space-y-2 list-disc list-inside pt-1">
+            <li>Caso ainda assim ocorra, é estritamente restrito a <strong>Safe Spaces</strong>.</li>
+            <li>No mapa principal e áreas públicas, o conteúdo deve permanecer estritamente <strong>SFW</strong>.</li>
+            <li>O dono do Safe Space é o único responsável por quem entra e pelo que acontece dentro dele.</li>
+            <li class="text-pink-300 font-medium">Consentimento é obrigatório. Qualquer tentativa de forçar interações NSFW resultará em punição imediata.</li>
+          </ul>
+        </div>
       </section>
 
       <!-- Regra 4 -->
-      <section class="bg-zinc-800/50 border border-zinc-700/50 rounded-xl p-6 shadow-md">
-        <h2 class="text-xl font-bold text-amber-400 mb-3 flex items-center gap-2">
-          <span>4.</span> Safe Spaces
-        </h2>
-        <ul class="list-disc list-inside space-y-1 text-zinc-300">
+      <section id="r4" class="group bg-purple-950/30 border border-purple-800/30 hover:border-purple-600/50 rounded-2xl p-6 transition duration-300 hover:shadow-lg hover:shadow-purple-900/20">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-10 h-10 rounded-xl bg-purple-900/50 border border-purple-700/50 flex items-center justify-center text-pink-400 font-pony text-lg">4</span>
+          <h2 class="text-xl font-pony text-purple-100 group-hover:text-pink-300 transition">Safe Spaces</h2>
+        </div>
+        <ul class="space-y-2 text-sm text-purple-200/90 list-disc list-inside">
           <li>Safe Spaces são áreas privadas. Respeite o direito do dono de controlar quem entra.</li>
           <li>Não invada Safe Spaces sem permissão.</li>
           <li>O que acontece dentro de um Safe Space é de inteira responsabilidade dos participantes.</li>
@@ -68,41 +145,48 @@
       </section>
 
       <!-- Regra 5 -->
-      <section class="bg-zinc-800/50 border border-zinc-700/50 rounded-xl p-6 shadow-md">
-        <h2 class="text-xl font-bold text-amber-400 mb-3 flex items-center gap-2">
-          <span>5.</span> Administração
-        </h2>
-        <ul class="list-disc list-inside space-y-1 text-zinc-300">
+      <section id="r5" class="group bg-purple-950/30 border border-purple-800/30 hover:border-purple-600/50 rounded-2xl p-6 transition duration-300 hover:shadow-lg hover:shadow-purple-900/20">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-10 h-10 rounded-xl bg-purple-900/50 border border-purple-700/50 flex items-center justify-center text-pink-400 font-pony text-lg">5</span>
+          <h2 class="text-xl font-pony text-purple-100 group-hover:text-pink-300 transition">Administração</h2>
+        </div>
+        <ul class="space-y-2 text-sm text-purple-200/90 list-disc list-inside">
           <li>As decisões da administração são finais.</li>
           <li>Tentar contornar punições ou criar contas alternativas para evitar ban resultará em banimento permanente.</li>
-          <li>Reclamações devem ser feitas de forma civilizada (preferencialmente no Discord).</li>
+          <li>Reclamações devem ser feitas de forma civilizada (preferencialmente através do nosso servidor no Discord).</li>
         </ul>
       </section>
 
       <!-- Regra 6 -->
-      <section class="bg-zinc-800/50 border border-zinc-700/50 rounded-xl p-6 shadow-md">
-        <h2 class="text-xl font-bold text-amber-400 mb-3 flex items-center gap-2">
-          <span>6.</span> Diversos
-        </h2>
-        <ul class="list-disc list-inside space-y-1 text-zinc-300">
-          <li>Não abuse de exploits ou bugs conhecidos.</li>
+      <section id="r6" class="group bg-purple-950/30 border border-purple-800/30 hover:border-purple-600/50 rounded-2xl p-6 transition duration-300 hover:shadow-lg hover:shadow-purple-900/20">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-10 h-10 rounded-xl bg-purple-900/50 border border-purple-700/50 flex items-center justify-center text-pink-400 font-pony text-lg">6</span>
+          <h2 class="text-xl font-pony text-purple-100 group-hover:text-pink-300 transition">Diversos</h2>
+        </div>
+        <ul class="space-y-2 text-sm text-purple-200/90 list-disc list-inside">
+          <li>Não abuse de exploits ou bugs conhecidos do Garry's Mod ou dos addons.</li>
           <li>O servidor é um espaço de hangout. Mantenha o clima minimamente agradável para a maioria.</li>
           <li>Em caso de dúvida sobre alguma regra, pergunte a um administrador antes de agir.</li>
         </ul>
       </section>
 
-      <!-- Observação -->
-      <div class="bg-amber-500/10 border border-amber-500/30 rounded-xl p-6 text-amber-200 text-sm">
-        <p class="font-semibold mb-1">Observação Importante:</p>
-        <p class="text-amber-200/80">As regras existem para manter o servidor jogável e confortável para todos. A administração reserva-se o direito de intervir em situações que prejudiquem a experiência geral, mesmo que não estejam explicitamente listadas acima.</p>
+      <!-- Observação Final -->
+      <div id="observacao" class="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-6 text-amber-200 text-sm shadow-md">
+        <div class="flex items-center gap-2 text-amber-400 font-bold mb-2">
+          <span>📜</span>
+          <span>Observação Final</span>
+        </div>
+        <p class="text-amber-200/80 leading-relaxed">
+          As regras existem para manter o servidor jogável e confortável para todos. A administração reserva-se o direito de intervir em situações que prejudiquem a experiência geral, mesmo que não estejam explicitamente listadas acima.
+        </p>
       </div>
 
     </main>
-
-    <footer class="text-center mt-12 text-zinc-500 text-xs">
-      &copy; Servidor Garry's Mod — Todos os direitos reservados.
-    </footer>
   </div>
+
+  <footer class="text-center py-8 border-t border-purple-900/40 text-purple-400/60 text-xs">
+    <p>🐴 <strong>PonyBuild Brasil</strong> — Servidor Garry's Mod</p>
+  </footer>
 
 </body>
 </html>
