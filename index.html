@@ -22,7 +22,7 @@
 </head>
 <body class="text-purple-100 antialiased min-h-screen">
 
-  <!-- Header / Banner Header -->
+  <!-- Header -->
   <header class="relative border-b border-purple-900/50 bg-purple-950/40 backdrop-blur-md sticky top-0 z-50">
     <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3 text-center md:text-left">
@@ -37,7 +37,6 @@
         </div>
       </div>
 
-      <!-- Quick Nav Link -->
       <a href="#observacao" class="text-xs font-semibold bg-purple-900/60 hover:bg-purple-800 border border-purple-700/50 text-pink-300 px-4 py-2 rounded-full transition duration-300 hover:shadow-md hover:shadow-pink-500/20">
         📌 Observações Finais
       </a>
@@ -46,20 +45,21 @@
 
   <div class="max-w-5xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
 
-    <!-- Navegação de Regras (Menu Lateral para Telas Grandes) -->
+    <!-- Navegação de Regras -->
     <aside class="md:col-span-1 space-y-2 hidden md:block sticky top-24 h-fit">
       <p class="text-xs font-bold uppercase tracking-wider text-purple-400 px-3 mb-3">Índice</p>
       <nav class="flex flex-col space-y-1 text-sm">
-        <a href="#r1" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🤝</span> 1. Respeito</a>
-        <a href="#r2" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🧱</span> 2. Construções</a>
-        <a href="#r3" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🚫</span> 3. Conteúdo NSFW</a>
-        <a href="#r4" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🔒</span> 4. Safe Spaces</a>
-        <a href="#r5" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🛡️</span> 5. Administração</a>
-        <a href="#r6" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2"><span>🎈</span> 6. Diversos</a>
+        <a href="#pilar" class="px-3 py-2 rounded-lg text-pink-300 bg-pink-950/30 border border-pink-500/30 font-semibold transition flex items-center gap-2">🏛️ Nosso Pilar</a>
+        <a href="#r1" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2">🤝 1. Respeito</a>
+        <a href="#r2" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2">🧱 2. Construções</a>
+        <a href="#r3" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2">🔞 3. Conteúdo Adulto</a>
+        <a href="#r4" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2">🔒 4. Safe Spaces</a>
+        <a href="#r5" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2">🛡️ 5. Administração</a>
+        <a href="#r6" class="px-3 py-2 rounded-lg text-purple-300 hover:bg-purple-900/40 hover:text-pink-300 transition flex items-center gap-2">🎈 6. Diversos</a>
       </nav>
     </aside>
 
-    <!-- Lista Principal de Regras -->
+    <!-- Lista Principal -->
     <main class="md:col-span-3 space-y-6">
 
       <!-- Apresentação -->
@@ -68,9 +68,23 @@
           Bem-vindo ao PonyBuild! 🦄
         </h2>
         <p class="text-sm text-purple-200/80 leading-relaxed">
-          Para garantir a amizade e a diversão de todos no servidor, solicitamos que leia e siga as regras abaixo.
+          Aqui a prioridade é construir, trocar uma ideia sem estresse e manter o clima leve. Criamos este guia pra que todo mundo saiba como navegar no servidor numa boa!
         </p>
       </div>
+
+      <!-- PILAR PRINCIPAL: O Princípio do Conforto -->
+      <section id="pilar" class="relative bg-gradient-to-br from-pink-950/60 via-purple-950/50 to-indigo-950/60 border-2 border-pink-400/50 rounded-2xl p-6 shadow-xl shadow-pink-950/40">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-3xl">🏛️</span>
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-pink-400">O Pilar Principal</span>
+            <h2 class="text-2xl font-pony text-pink-200">Princípio do Conforto Coletivo</h2>
+          </div>
+        </div>
+        <p class="text-sm text-purple-100 leading-relaxed">
+          No PonyBuild, a regra de ouro é simples: <strong>o ambiente só tá bom se tiver bom pra todo mundo</strong>. Se uma brincadeira, papo ou cena tá divertida e confortando todo o grupo presente, perfeito, aproveitem! Mas se alguém no espaço se sentir incomodado e expressar isso, o bom senso prevalece e a situação deve parar imediatamente. Se a conversa não resolver, a staff entra pra ajustar as coisas. Resumindo: a liberdade de um não pode anular o conforto do outro.
+        </p>
+      </section>
 
       <!-- Regra 1 -->
       <section id="r1" class="group bg-purple-950/30 border border-purple-800/30 hover:border-purple-600/50 rounded-2xl p-6 transition duration-300 hover:shadow-lg hover:shadow-purple-900/20">
@@ -79,9 +93,9 @@
           <h2 class="text-xl font-pony text-purple-100 group-hover:text-pink-300 transition">Respeito e Conduta</h2>
         </div>
         <ul class="space-y-2 text-sm text-purple-200/90 list-disc list-inside">
-          <li>Trate todos os jogadores com respeito básico.</li>
-          <li>Assédio, discriminação e toxicidade excessiva não serão tolerados.</li>
-          <li>Brincadeiras e zoações leves são permitidas, desde que não ultrapassem o limite do constrangedor.</li>
+          <li>Trate todo mundo com consideração básica. Não custa nada ser bacana com os outros.</li>
+          <li>Assédio, preconceito e toxicidade real estão completamente fora de questão por aqui.</li>
+          <li>A zueira leve e as piadas estão liberadas, contanto que não passem do ponto e não virem constrangimento.</li>
         </ul>
       </section>
 
@@ -92,39 +106,36 @@
           <h2 class="text-xl font-pony text-purple-100 group-hover:text-pink-300 transition">Construções e Props</h2>
         </div>
         <ul class="space-y-2 text-sm text-purple-200/90 list-disc list-inside">
-          <li>Não destrua ou atrapalhe construções de outros jogadores sem permissão.</li>
-          <li>Evite spam excessivo de props que cause lag significativo no servidor.</li>
-          <li>O uso de <strong>Prop Protection</strong> deve ser respeitado por todos.</li>
+          <li>Respeite o espaço alheio: não mexa, não delete e não atrapalhe as construções dos outros sem convite.</li>
+          <li>Pegue leve no spam de props pra não derrubar o FPS do mapa ou causar lag nos amiguinhos.</li>
+          <li>O Prop Protection existe por um motivo, respeite os limites das áreas alheias.</li>
         </ul>
       </section>
 
-      <!-- Regra 3 (NSFW - Atualizada para Proibido) -->
-      <section id="r3" class="relative bg-gradient-to-b from-rose-950/40 to-pink-950/30 border-2 border-rose-500/50 rounded-2xl p-6 shadow-lg shadow-rose-950/30 overflow-hidden">
-        <div class="absolute top-0 right-0 bg-rose-500/20 text-rose-300 border-l border-b border-rose-500/40 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-bl-lg">
-          Proibição
-        </div>
-        
+      <!-- Regra 3 (NSFW - Restaurada e com Destaque) -->
+      <section id="r3" class="relative bg-gradient-to-b from-purple-950/50 to-pink-950/30 border-2 border-pink-500/40 rounded-2xl p-6 shadow-lg shadow-pink-950/30 overflow-hidden">
         <div class="flex items-center gap-3 mb-4">
-          <span class="w-10 h-10 rounded-xl bg-rose-900/50 border border-rose-600/50 flex items-center justify-center text-rose-300 font-pony text-lg">3</span>
-          <h2 class="text-xl font-pony text-rose-200">NSFW e Conteúdo Adulto</h2>
+          <span class="w-10 h-10 rounded-xl bg-pink-900/50 border border-pink-600/50 flex items-center justify-center text-pink-300 font-pony text-lg">3</span>
+          <h2 class="text-xl font-pony text-pink-200">NSFW e Conteúdo Adulto</h2>
         </div>
 
         <div class="space-y-3 text-sm text-purple-200/90">
-          <!-- Destaque para "é estritamente PROIBIDO" -->
-          <div class="bg-rose-950/60 border border-rose-500/40 rounded-xl p-3.5 flex items-start gap-3">
-            <span class="text-lg">🚫</span>
+          <div class="bg-pink-950/60 border border-pink-500/30 rounded-xl p-3.5 flex items-start gap-3">
+            <span class="text-lg">⚠️</span>
             <p class="leading-relaxed">
-              Conteúdo adulto (ERP, modelos NSFW, interações sexuais e afins) 
-              <span class="inline-block px-2 py-0.5 mx-1 font-bold text-white bg-rose-600 border border-rose-400 rounded-md shadow-sm">
-                É ESTRITAMENTE PROIBIDO
+              Conteúdo de teor adulto (ERP, modelos NSFW, temas sensíveis)
+              <span class="inline-block px-2 py-0.5 mx-1 font-bold text-pink-100 bg-pink-600/60 border border-pink-400/80 rounded-md shadow-sm">
+                NÃO É INCENTIVADO
               </span> 
-              neste servidor.
+              neste servidor seu estranho!
             </p>
           </div>
 
           <ul class="space-y-2 list-disc list-inside pt-1">
-            <li>O servidor é mantido como um ambiente exclusivamente <strong>SFW</strong> em todas as áreas e mapas.</li>
-            <li>O uso ou exibição de modelos, sprays, sons ou textos de teor sexual resultará em punição imediata.</li>
+            <li>Se ainda assim acontecer, é algo restrito exclusivamente aos <strong>Safe Spaces</strong>.</li>
+            <li>O mapa aberto e as áreas públicas são mantidos estritamente livres de conteúdo adulto (SFW).</li>
+            <li>O dono do Safe Space é responsável por quem aceita lá dentro e pelo que rola no ambiente.</li>
+            <li class="text-pink-300 font-medium">Tentar forçar qualquer situação desagradável gera punição direta.</li>
           </ul>
         </div>
       </section>
@@ -136,9 +147,9 @@
           <h2 class="text-xl font-pony text-purple-100 group-hover:text-pink-300 transition">Safe Spaces</h2>
         </div>
         <ul class="space-y-2 text-sm text-purple-200/90 list-disc list-inside">
-          <li>Safe Spaces são áreas privadas. Respeite o direito do dono de controlar quem entra.</li>
-          <li>Não invada Safe Spaces sem permissão.</li>
-          <li>O que acontece dentro de um Safe Space é de inteira responsabilidade dos participantes, desde que respeite as regras gerais do servidor.</li>
+          <li>Safe Spaces são locais privados. O dono define as regras de entrada e permanência.</li>
+          <li>Não force entrada nem tente xeretar o espaço dos outros sem autorização prévia.</li>
+          <li>A responsabilidade pelo que acontece dentro de um espaço privado é totalmente dos participantes.</li>
         </ul>
       </section>
 
@@ -149,9 +160,9 @@
           <h2 class="text-xl font-pony text-purple-100 group-hover:text-pink-300 transition">Administração</h2>
         </div>
         <ul class="space-y-2 text-sm text-purple-200/90 list-disc list-inside">
-          <li>As decisões da administração são finais.</li>
-          <li>Tentar contornar punições ou criar contas alternativas para evitar ban resultará em banimento permanente.</li>
-          <li>Reclamações devem ser feitas de forma civilizada (preferencialmente através do nosso servidor no Discord).</li>
+          <li>A palavra da staff busca manter a ordem para todos. As decisões tomadas devem ser respeitadas.</li>
+          <li>Usar contas secundárias ou tentar driblar punições só vai resultar em banimento definitivo.</li>
+          <li>Se teve algum problema ou discordou de algo, troque uma ideia tranquila com a gente no Discord.</li>
         </ul>
       </section>
 
@@ -162,9 +173,9 @@
           <h2 class="text-xl font-pony text-purple-100 group-hover:text-pink-300 transition">Diversos</h2>
         </div>
         <ul class="space-y-2 text-sm text-purple-200/90 list-disc list-inside">
-          <li>Não abuse de exploits ou bugs conhecidos do Garry's Mod ou dos addons.</li>
-          <li>O servidor é um espaço de hangout. Mantenha o clima minimamente agradável para a maioria.</li>
-          <li>Em caso de dúvida sobre alguma regra, pergunte a um administrador antes de agir.</li>
+          <li>Nada de abusar de bugs do jogo ou de addons pra tirar vantagem ou avacalhar o mapa.</li>
+          <li>O servidor é um lugar de hangout. O objetivo é relaxar, então colabore com a atmosfera geral.</li>
+          <li>Na dúvida sobre qualquer atitude, chama um staff no chat e pergunta antes de fazer.</li>
         </ul>
       </section>
 
@@ -172,10 +183,10 @@
       <div id="observacao" class="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-6 text-amber-200 text-sm shadow-md">
         <div class="flex items-center gap-2 text-amber-400 font-bold mb-2">
           <span>📜</span>
-          <span>Observação Final</span>
+          <span>Observação Importante</span>
         </div>
         <p class="text-amber-200/80 leading-relaxed">
-          As regras existem para manter o servidor jogável e confortável para todos. A administração reserva-se o direito de intervir em situações que prejudiquem a experiência geral, mesmo que não estejam explicitamente listadas acima.
+          Estas regras existem simplesmente pra garantir que o PonyBuild continue um lugar gostoso de jogar. A administração se reserva o direito de agir em casos que afetem o bem-estar do servidor, mesmo que a situação específica não esteja detalhada palavra por palavra aqui.
         </p>
       </div>
 
